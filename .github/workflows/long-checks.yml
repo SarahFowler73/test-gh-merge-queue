@@ -1,0 +1,9 @@
+name: My long checks
+on:
+  merge_group:
+    types: [checks_requested]
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Build
+      run: echo 'built'
